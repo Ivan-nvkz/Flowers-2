@@ -1,0 +1,247 @@
+<!-- ============================================================================================================ -->
+<!-- 
+@media (max-width: 1230px) {
+   .about__content-btn {
+      
+      @include adaptiv-value("padding-top", 15, 10, 0);
+      @include adaptiv-value("padding-bottom", 15, 10, 0);
+      @include adaptiv-value("padding-left", 30, 5, 0);
+      @include adaptiv-value("padding-right", 30, 5, 0);
+   }
+}
+ -->
+<!-- ============================================================================================================ -->
+<!-- Slider Swiper ============================================================================================== -->
+<div class="swiper">
+   <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+   </div>
+
+   <div class="swiper-pagination"></div>
+
+   <div class="swiper-button-prev"></div>
+   <div class="swiper-button-next"></div>
+
+   <div class="swiper-scrollbar"></div>
+</div>
+<!-- Slider Swiper ============================================================================================== -->
+
+<!-- Pop-up  hystmodal ========================================================================================== -->
+<button data-popup="#massageName">Я открываю попап </button>
+
+<div class="hystmodal" id="massageName" aria-hidden="true">
+   <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+         <button data-hystclose class="hystmodal__close">Закрыть</button>
+         <div class="popup__body">
+            Сообщение 2
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eveniet sequi, ut reiciendis cum
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Pop-up  hystmodal ========================================================================================== -->
+
+<!-- Exemple no pictures ======================================================================================== -->
+<!--  
+.exemple {
+background-color: #ccc;
+}
+.exemple__items {
+display: flex;
+flex-wrap: wrap;
+row-gap: 30px;
+margin: 0px -15px;
+}
+.exemple__item {
+padding: 0 15px;
+flex: 0 1 33.333%;
+}
+.exemple__item-block {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+
+.item-block__body {
+padding: 15px;
+background-color: #f8b405;
+display: flex;
+flex-direction: column;
+flex: 1 1 auto;
+}
+.item-block__title {
+// flex: 1 1 auto;
+}
+.item-block__text {
+flex: 1 1 auto;
+}
+.item-block__btn {
+display: block;
+}
+-->
+
+<div class="exemple no pictures">
+   <div class="exemple">
+      <div class="exemple__items">
+         <div class="exemple__item">
+            <div class="exemple__item-block">
+               <div class="item-block__body">
+                  <p>action</p>
+                  <a class="item-block__title" href=""> заголовок</a>
+                  <div class="item-block__text">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                  </div>
+                  <a class="item-block__btn" href="#">button</a>
+               </div>
+            </div>
+         </div>
+         <div class="exemple__item">
+            <div class="exemple__item-block">
+               <div class="item-block__body">
+                  <p>action</p>
+                  <a class="item-block__title" href="">заголовок </a>
+                  <div class="item-block__text">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                     corrupti, sunt aliquam inventore. Assumenda, eveniet possimus inventore totam doloremque,
+                     ut
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                     corrupti, sunt aliquam inventore. Assumenda, eveniet possimus inventore totam doloremque,
+                     ut
+                  </div>
+                  <a class="item-block__btn" href="#">button</a>
+               </div>
+            </div>
+         </div>
+         <div class="exemple__item">
+            <div class="exemple__item-block">
+               <div class="item-block__body">
+                  <p>action</p>
+                  <a class="item-block__title" href="">заголовок</a>
+                  <div class="item-block__text">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                  </div>
+                  <a class="item-block__btn" href="#">button</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Exemple no pictures ======================================================================================== -->
+
+<!-- Exemple    pictures ======================================================================================== -->
+<!--
+.exemple {
+background-color: #ccc;
+}
+.exemple__items {
+display: flex;
+flex-wrap: wrap;
+row-gap: 30px;
+margin: 0px -15px;
+}
+.exemple__item {
+padding: 0 15px;
+flex: 0 1 33.333%;
+}
+.exemple__item-block {
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+.item-block__pictures {
+display: block;
+position: relative;
+padding: 0px 0px 60.47619047619048% 0px;
+}
+.item-block__images {
+object-fit: cover;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+.item-block__body {
+padding: 15px;
+background-color: #f8b405;
+display: flex;
+flex-direction: column;
+flex: 1 1 auto;
+}
+.item-block__title {
+// flex: 1 1 auto;
+}
+.item-block__text {
+flex: 1 1 auto;
+}
+.item-block__btn {
+display: block;
+}
+ -->
+<section class="exemple">
+   <div class="exemple__items">
+      <div class="exemple__item">
+         <div class="exemple__item-block">
+            <a class="item-block__pictures" href="#">
+               <img class="item-block__images" src="images/slider-routes/routes-1.jpg" alt="">
+            </a>
+            <div class="item-block__body">
+               <a class="item-block__title" href="">заголовок</a>
+               <div class="item-block__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                  corrupti, sunt aliquam inventore. Assumenda, eveniet possimus inventore totam doloremque, ut
+                  id culpa, deserunt nihil nobis architecto!
+               </div>
+               <a class="item-block__btn" href="#">button</a>
+            </div>
+         </div>
+      </div>
+      <div class="exemple__item">
+         <div class="exemple__item-block">
+            <a class="item-block__pictures" href="#">
+               <img class="item-block__images" src="images/slider-routes/routes-1.jpg" alt="">
+            </a>
+            <div class="item-block__body">
+               <a class="item-block__title" href="">заголовок </a>
+               <div class="item-block__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                  corrupti, sunt aliquam inventore. Assumenda, eveniet possimus inventore totam doloremque, ut
+                  id culpa, deserunt nihil nobis architecto!
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                  corrupti, sunt aliquam inventore. Assumenda, eveniet possimus inventore totam doloremque, ut
+                  id culpa, deserunt nihil nobis architecto!
+               </div>
+               <a class="item-block__btn" href="#">button</a>
+            </div>
+         </div>
+      </div>
+      <div class="exemple__item">
+         <div class="exemple__item-block">
+            <a class="item-block__pictures" href="#">
+               <img class="item-block__images" src="images/slider-routes/routes-1.jpg" alt="">
+            </a>
+            <div class="item-block__body">
+               <a class="item-block__title" href="">заголовок</a>
+               <div class="item-block__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad dicta id rerum
+                  corrupti, sunt aliquam inventore. Assumenda, eveniet possimus inventore totam doloremque, ut
+                  id culpa, deserunt nihil nobis architecto!
+               </div>
+               <a class="item-block__btn" href="#">button</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
+<!-- Exemple    pictures ======================================================================================== -->
